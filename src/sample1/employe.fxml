@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="667.0" prefWidth="803.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample1.employeCntrl">
+    <children>
+        <Label layoutX="55.0" layoutY="190.0" text="Nom" textFill="#e8e2e2">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font></Label>
+        <Label layoutX="47.0" layoutY="228.0" text="Prenom" textFill="#f8f4f4">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+        <Label layoutX="47.0" layoutY="267.0" text="Adresse" textFill="#e4dada">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+        <TextField fx:id="Nom" layoutX="99.0" layoutY="187.0" prefHeight="26.0" prefWidth="184.0" promptText="Nom" />
+        <TextField fx:id="Prenom" layoutX="99.0" layoutY="224.0" prefHeight="26.0" prefWidth="184.0" promptText="Prenom" />
+        <TextField fx:id="Adresse" layoutX="99.0" layoutY="263.0" prefHeight="26.0" prefWidth="184.0" promptText="Adresse" />
+        <TableView fx:id="tab" layoutX="13.0" layoutY="355.0" onMouseClicked="#handle" prefHeight="208.0" prefWidth="680.0" style="-fx-background-color: white;">
+            <columns>
+                <TableColumn fx:id="TNom" prefWidth="120.0" text="Nom" />
+                <TableColumn fx:id="TPrenom" prefWidth="158.0" text="Prenom" />
+                <TableColumn fx:id="TAdresse" prefWidth="194.0" text="Adresse" />
+                <TableColumn fx:id="TCIN" prefWidth="207.0" text="CIN" />
+            </columns>
+        </TableView>
+        <Label layoutX="70.0" layoutY="305.0" text="CIN" textFill="#e4dada">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+        <TextField fx:id="CIN" layoutX="99.0" layoutY="301.0" prefHeight="26.0" prefWidth="184.0" promptText="CIN" />
+        <Button fx:id="btnAjouter" layoutX="436.0" layoutY="180.0" mnemonicParsing="false" onAction="#clickme" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Ajouter">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Button>
+        <Button fx:id="btnSupprimer" layoutX="436.0" layoutY="230.0" mnemonicParsing="false" onAction="#clickme" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="  Supprimer">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Button>
+        <Button fx:id="btnRechercher" layoutX="436.0" layoutY="285.0" mnemonicParsing="false" onAction="#clickme" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Update">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font></Button>
+        <ImageView fx:id="user" fitHeight="86.0" fitWidth="91.0" layoutX="318.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pngtree-user-vector-avatar-png-image_1541962.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="283.0" layoutY="102.0" text="Gestion d'employé" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font></Label>
+        <ImageView layoutX="16.0" layoutY="217.0">
+            <image>
+                <Image url="@icons8_user_male_30px_2.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="19.0" layoutY="264.0">
+            <image>
+                <Image url="@icons8_marker_24px_4.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="18.0" layoutY="301.0">
+            <image>
+                <Image url="@icons8_membership_card_26px_1.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="16.0" layoutY="181.0">
+            <image>
+                <Image url="@icons8_user_male_30px_4.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="448.0" layoutY="293.0">
+            <image>
+                <Image url="@icons8_update_24px_7.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="444.0" layoutY="234.0">
+            <image>
+                <Image url="@icons8_delete_trash_32px_7.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="445.0" layoutY="185.0">
+            <image>
+                <Image url="@icons8_add_30px_1.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

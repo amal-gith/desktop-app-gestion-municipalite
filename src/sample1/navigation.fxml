@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="579.0" prefWidth="719.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample1.navigationCntrl">
+   <children>
+      <Button fx:id="admin" layoutX="262.0" layoutY="184.0" mnemonicParsing="false" onAction="#clickme" prefHeight="45.0" prefWidth="248.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Administrateur" textFill="#ebe5e5">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="resp" layoutX="262.0" layoutY="260.0" mnemonicParsing="false" onAction="#clickme" prefHeight="45.0" prefWidth="248.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="     Responsable de la planification" textFill="#f5efef">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="financier" layoutX="260.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickme" prefHeight="45.0" prefWidth="258.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Financier" textFill="#e4e2e2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="guichet" layoutX="260.0" layoutY="414.0" mnemonicParsing="false" onAction="#clickme" prefHeight="45.0" prefWidth="258.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Guichet" textFill="#e4dbdb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="70.0" layoutY="118.0" prefHeight="45.0" prefWidth="117.0" text="Login as :" textFill="#e8dcdc">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="30.0" layoutY="127.0">
+         <image>
+         </image>
+      </ImageView>
+      <ImageView layoutX="277.0" layoutY="270.0">
+         <image>
+            <Image url="@icons8_user_male_26px_4.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="275.0" layoutY="348.0">
+         <image>
+            <Image url="@icons8_user_male_30px_6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="37.0" layoutX="272.0" layoutY="422.0">
+         <image>
+            <Image url="@icons8_user_50px_6.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="277.0" layoutY="193.0">
+         <image>
+            <Image url="@icons8_businessman_26px_2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

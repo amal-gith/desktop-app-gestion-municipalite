@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="649.0" prefWidth="716.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample1.profitCntrl">
+   <children>
+      <Label layoutX="300.0" layoutY="92.0" text="Profit" textFill="#ddd7d7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="186.0" text="ID" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="227.0" text="Nom" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="266.0" text="Date" textFill="#ebdede">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="306.0" text="Prix" textFill="#f2e3e3">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID" layoutX="103.0" layoutY="173.0" prefHeight="26.0" prefWidth="196.0" promptText="ID" />
+      <TextField fx:id="Nom" layoutX="104.0" layoutY="214.0" prefHeight="26.0" prefWidth="196.0" promptText="Nom" />
+      <TextField fx:id="Date" layoutX="103.0" layoutY="253.0" prefHeight="26.0" prefWidth="196.0" promptText="Date" />
+      <TextField fx:id="Prix" layoutX="103.0" layoutY="293.0" prefHeight="26.0" prefWidth="196.0" promptText="Prix" />
+      <TableView fx:id="TV" layoutX="15.0" layoutY="365.0" onMouseClicked="#handl" prefHeight="224.0" prefWidth="683.0">
+        <columns>
+          <TableColumn fx:id="TID" prefWidth="101.0" text="ID" />
+          <TableColumn fx:id="TNom" prefWidth="100.0" text="Nom" />
+            <TableColumn fx:id="TDate" prefWidth="234.0" text="Date" />
+            <TableColumn fx:id="TPrix" prefWidth="247.0" text="Prix" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInsert" layoutX="505.0" layoutY="174.0" mnemonicParsing="false" onAction="#Click" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="507.0" layoutY="234.0" mnemonicParsing="false" onAction="#Click" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Supprimer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="509.0" layoutY="290.0" mnemonicParsing="false" onAction="#Click" prefHeight="41.0" prefWidth="139.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Update">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <ImageView fitHeight="75.0" fitWidth="91.0" layoutX="278.0" layoutY="17.0">
+         <image>
+            <Image url="@icons8_money_bag_48px_1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="32.0" layoutY="600.0" mnemonicParsing="false" onAction="#retour" prefHeight="32.0" prefWidth="64.0" style="-fx-background-color: gray; -fx-background-radius: 100px;" text="Retour" />
+      <ImageView layoutX="32.0" layoutY="221.0">
+         <image>
+            <Image url="@icons8_user_male_26px_12.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="30.0" layoutY="181.0">
+         <image>
+            <Image url="@icons8_key_30px_12.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="17.0" layoutY="262.0">
+         <image>
+            <Image url="@icons8_calendar_25_50px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="29.0" layoutY="301.0">
+         <image>
+            <Image url="@icons8_price_24px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="522.0" layoutY="182.0">
+         <image>
+            <Image url="@icons8_add_24px_41.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="516.0" layoutY="244.0">
+         <image>
+            <Image url="@icons8_delete_trash_24px_31.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="524.0" layoutY="296.0">
+         <image>
+            <Image url="@icons8_update_24px_31.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

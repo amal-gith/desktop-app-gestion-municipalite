@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="661.0" prefWidth="749.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample1.Conntroller">
+   <children>
+      <TextField fx:id="Nomid" layoutX="121.0" layoutY="115.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="DateGid" layoutX="121.0" layoutY="156.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextField fx:id="Budgetid" layoutX="121.0" layoutY="208.0" prefHeight="26.0" prefWidth="214.0" />
+      <TextArea fx:id="Descriptionid" layoutX="119.0" layoutY="257.0" prefHeight="137.0" prefWidth="214.0" />
+      <Label layoutX="72.0" layoutY="132.0" text="Nom" textFill="#eee7e7">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="70.0" layoutY="173.0" text="Date" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="64.0" layoutY="223.0" text="Budget" textFill="#f8f7f7">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="41.0" layoutY="260.0" text="Description" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <TableView fx:id="tv" layoutX="19.0" layoutY="400.0" onMouseClicked="#handle" prefHeight="200.0" prefWidth="710.0">
+        <columns>
+          <TableColumn fx:id="TNom" prefWidth="111.0" text="Nom" />
+          <TableColumn fx:id="TDate" prefWidth="147.0" text="Date" />
+            <TableColumn fx:id="TPrix" prefWidth="199.0" text="Budget" />
+            <TableColumn fx:id="TDescription" prefWidth="248.0" text="Description" />
+        </columns>
+      </TableView>
+      <Label layoutX="333.0" layoutY="97.0" text="Gaine" textFill="#ebe4e4">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <Button fx:id="btnInsert" layoutX="526.0" layoutY="142.0" mnemonicParsing="false" onAction="#ClickA" prefHeight="45.0" prefWidth="148.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Ajouter">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="btnDelets" layoutX="526.0" layoutY="204.0" mnemonicParsing="false" onAction="#ClickA" prefHeight="45.0" prefWidth="148.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Supprimer">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="526.0" layoutY="270.0" mnemonicParsing="false" onAction="#ClickA" prefHeight="45.0" prefWidth="148.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Update">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="44.0" layoutY="613.0" mnemonicParsing="false" onAction="#retour" prefHeight="32.0" prefWidth="77.0" style="-fx-background-color: gray; -fx-background-radius: 100px;" text="Retour" />
+      <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="27.0" layoutY="125.0">
+         <image>
+            <Image url="@icons8_user_50px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="38.0" layoutY="171.0">
+         <image>
+            <Image url="@icons8_pay_date_24px_2.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="31.0" layoutY="217.0">
+         <image>
+            <Image url="@icons8_coin_in_hand_24px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="542.0" layoutY="153.0">
+         <image>
+            <Image url="@icons8_add_24px_2.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="536.0" layoutY="215.0">
+         <image>
+            <Image url="@icons8_delete_trash_24px.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="545.0" layoutY="278.0">
+         <image>
+            <Image url="@icons8_update_30px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="108.0" layoutX="303.0" layoutY="14.0">
+         <image>
+            <Image url="@icons8_coin_in_hand_64px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="578.0" prefWidth="755.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample1.choisi">
+   <children>
+      <Button fx:id="profit" layoutX="92.0" layoutY="353.0" mnemonicParsing="false" onAction="#clickme" prefHeight="51.0" prefWidth="114.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Profit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="gp" layoutX="311.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickme" prefHeight="59.0" prefWidth="146.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Gestion des Projets">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="gain" layoutX="568.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickme" prefHeight="59.0" prefWidth="126.0" style="-fx-background-color: #76ff03; -fx-background-radius: 100px;" text="Gain">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView layoutX="96.0" layoutY="230.0">
+         <image>
+            <Image url="@icons8_cash_in_hand_100px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="356.0" layoutY="256.0">
+         <image>
+            <Image url="@icons8_light_48px_1.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="577.0" layoutY="227.0">
+         <image>
+            <Image url="@icons8_money_100px_1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
